@@ -5,33 +5,33 @@ Este projeto modela entidades relacionadas a um sistema de gerenciamento de fute
  ***
 ##  🏗️ Classes Principais
 
-- **Pessoa**  *abstract class* (É superclass de Jogador e Tecnico)
-  - Representa uma pessoa genérica (nome, idade, cpf, salário, etc)
+- **Pessoa**  *abstract class* ( superclass de Jogador e Tecnico )
+  - Representa uma pessoa genérica ( nome, idade, cpf, salário, etc )
  
 - **Tecnico extends Pessoa**
   - Representa o técnico do time
   
-- **Jogador (extends Pessoa, implements Equipamentos)**
-  - Representa um jogador de futebol (posição, número da camisa, energia, gols)
+- **Jogador ( extends Pessoa, implements Equipamentos )**
+  - Representa um jogador de futebol ( posição, número da camisa, energia, gols )
   - Métodos de Equipamentos: verificarChuteiras, trocarUniforme, usarCaneleiras
    
-- **Goleiro (extends Jogador)**
-  - Especialização de Jogador (defesas, gols sofridos)
+- **Goleiro ( extends Jogador )**
+  - Especialização de Jogador ( defesas, gols sofridos )
   - Métodos específicos: defender(), cobrarTiroDeGol()
    
-- **Atacante (extends Jogador, implements Habilidades)**
-  - Especialização de Jogador (finalizações, assistências)
+- **Atacante ( extends Jogador, implements Habilidades )**
+  - Especialização de Jogador ( finalizações, assistências )
   - Métodos específicos: finalizar(), darAssistencia(), driblar(), passar(), cabecear()
   
-- **Futebol**  *abstract class*  (É superclass de FutebolCampo, FutebolSociety, FutebolAreia)**
-  - Superclasse para modalidades de futebol (modalidade, número de jogadores, duração da partida)
+- **Futebol**  *abstract class*  ( superclass de FutebolCampo, FutebolSociety, FutebolAreia )
+  - Superclasse para modalidades de futebol ( modalidade, número de jogadores, duração da partida )
   - Método abstrato iniciarJogo()
   
-- **FutebolCampo, FutebolSociety, FutebolAreia (extends Futebol)**
-  - Especializações para diferentes tipos de futebol (campo, society, areia), cada uma com atributos próprios
+- **FutebolCampo, FutebolSociety, FutebolAreia ( extends Futebol )**
+  - Especializações para diferentes tipos de futebol ( campo, society, areia ), cada uma com atributos próprios
     
 - **Time**
-  - Representa um time de futebol (nome, cidade, ano de fundação, títulos)
+  - Representa um time de futebol ( nome, cidade, ano de fundação, títulos )
   - Possui lista de jogadores e um técnico
   - Métodos para adicionar/remover jogadores, escalar time, treinar
 
@@ -42,7 +42,7 @@ Este projeto modela entidades relacionadas a um sistema de gerenciamento de fute
   - Implementada por Jogador
 - **Habilidades**
   - Implementada por Atacante
-- **Gramado (interface)**
+- **Gramado**
   - Métodos: cortarGrama(), verificarCondicao(), adubarGramado()
  ***
 ## 📱 Diagrama Visual
@@ -59,9 +59,9 @@ Abaixo está um diagrama de exemplo:
 - **Composição**:
   - Time possui uma lista de Jogadores e um Técnico.
 - **Implementação de Interfaces**:
-  - Jogador implementa Equipamentos (funções relacionadas a equipamentos esportivos).
-  - Atacante implementa Habilidades (funções como driblar, passar, cabecear).
-  - FutebolCampo implementa Gramado (funções relacionadas ao gramado).
+  - Jogador implementa Equipamentos ( funções relacionadas a equipamentos esportivos ).
+  - Atacante implementa Habilidades ( funções como driblar, passar, cabecear ).
+  - FutebolCampo implementa Gramado ( funções relacionadas ao gramado ).
 
  ***
 ## 📁 Estrutura do Projeto
