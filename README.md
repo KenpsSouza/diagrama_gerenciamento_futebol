@@ -38,9 +38,6 @@ Este projeto modela entidades relacionadas a um sistema de gerenciamento de fute
 
 ## Diagrama Visual
 
-
-## Diagrama Visual
-
 Abaixo está um diagrama de exemplo:
 
 ```mermaid
@@ -50,8 +47,8 @@ classDiagram
     Jogador <|-- Atacante
     Jogador <|.. Equipamentos
     Atacante <|.. Habilidades
-    Time "1" o-- "n" Jogador
-    Time "1" o-- "1" Tecnico
+    Time  --  Jogador
+    Time  --  Tecnico
     Futebol <|-- FutebolCampo
     Futebol <|-- FutebolSociety
     Futebol <|-- FutebolAreia
@@ -77,14 +74,13 @@ classDiagram
 Abaixo está um diagrama:
 
 ```
-classDiagram
     Pessoa <|-- Jogador
     Jogador <|-- Goleiro
     Jogador <|-- Atacante
     Jogador <|.. Equipamentos
     Atacante <|.. Habilidades
-    Time "1" o-- "n" Jogador
-    Time "1" o-- "1" Tecnico
+    Time -- Jogador
+    Time -- Tecnico
     Futebol <|-- FutebolCampo
     Futebol <|-- FutebolSociety
     Futebol <|-- FutebolAreia
