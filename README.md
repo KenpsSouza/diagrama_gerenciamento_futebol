@@ -39,21 +39,8 @@ Este projeto modela entidades relacionadas a um sistema de gerenciamento de fute
 ## Diagrama Visual
 
 Abaixo está um diagrama de exemplo:
+![Diagrama do Gerenciamento de Futebol](dia.png)
 
-```mermaid
-classDiagram
-    Pessoa <|-- Jogador
-    Jogador <|-- Goleiro
-    Jogador <|-- Atacante
-    Jogador <|.. Equipamentos
-    Atacante <|.. Habilidades
-    Time  --  Jogador
-    Time  --  Tecnico
-    Futebol <|-- FutebolCampo
-    Futebol <|-- FutebolSociety
-    Futebol <|-- FutebolAreia
-    FutebolCampo ..|> Gramado
-```
 
 
 
